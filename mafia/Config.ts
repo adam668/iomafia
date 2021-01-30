@@ -1,0 +1,1 @@
+export let domain = "http://localhost:8080" //for now
