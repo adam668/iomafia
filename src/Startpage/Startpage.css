@@ -53,20 +53,6 @@ svg:hover {
     width: 320px;
 }
 
-#contacts {
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-}
-
-#contacts a {
-    color: white;
-}¨
-
-#contacts a i {
-    margin-left: 15px;
-}
-
 button:hover{
     background-color: var(--hover-color);
 }
