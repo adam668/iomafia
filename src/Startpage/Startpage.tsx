@@ -1,4 +1,3 @@
-'use strict'
 /* eslint-disable react/no-direct-mutation-state */
 import Button from '../Button/Button'
 import './Startpage.css'
@@ -26,6 +25,7 @@ export default class Startpage extends Component {
                         <div id="title"><h1>Little Fantasy</h1></div>
                         <div id="top-buttons">
                             <button id="login">Login</button>
+                            <button id="register">Register</button>
                         </div>
                     </div>
                     <div id="main">
