@@ -1,15 +1,31 @@
-import mysql from 'mysql'
+import mongoose from 'mongoose'
 
-export let setupdb = async () => {
-    let connection = mysql.createConnection({
-        host     : 'localhost',
-        user     : 'me',
-        password : 'secret',
-        database : 'my_db'
-    });
-    
-    connection.connect();
-} 
+
+    export let init = () => {
+        mongoose.connect("mongodb+srv://adam:Adam2007@cluster0.huh7s.mongodb.net/littlefantasy?retryWrites=true&w=majority", {
+         useNewUrlParser: true,
+         useFindAndModify: false,
+         useUnifiedTopology: false,
+         autoIndex: false,
+         reconnectTries: Number.MAX_VALUE,
+         reconnectInterval: 500,
+         poolSize: 5,
+         connectTimeoutMS: 10000,
+         family: 4
+    })
+    mongoose.Promise = global.Promise
+    mongoose.connection.on("connected", async () =>  {
+        console.log("I'm connected to the mongodb database!")
+       
+    })
+    mongoose.connection.on("err", err => {
+        console.error(`Mongoose connection error: \n${err.stack}`)
+    })
+    mongoose.connection.on("disconnected", () => {
+        console.warn("Mongoose connection error")
+    })
+    }
+
   
 export const colors = {
     Reset: "\x1b[0m",
