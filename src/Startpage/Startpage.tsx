@@ -22,10 +22,12 @@ export default class Startpage extends Component {
             <React.Fragment>
                 <section>
                     <div id="header">
-                        <div id="title"><h1>Little Fantasy</h1></div>
-                        <div id="top-buttons">
-                            <button id="login">Login</button>
-                            <button id="register">Register</button>
+                        <div id="title">
+                            <h1>Little Fantasy</h1>
+                            <div id="top-buttons">
+                                <button id="login">Login</button>
+                                <button id="register">Register</button>
+                            </div>
                         </div>
                     </div>
                     <div id="main">
