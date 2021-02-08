@@ -10,8 +10,9 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-document.addEventListener('mousemove', (e: MouseEvent) => {
-  let body = document.getElementById('body')
-  if (body) body.style.backgroundPosition = `${e.clientX / 150 - 140}px ${e.clientY / 150 - 140}px`
-  else console.log('Not working!')
-})
+// OLD CODE 
+// document.addEventListener('mousemove', (e: MouseEvent) => {
+//   let body = document.getElementById('body')
+//   if (body) body.style.backgroundPosition = `${e.clientX / 150 - 140}px ${e.clientY / 150 - 140}px`
+//   else console.log('Not working!')
+// })
