@@ -37,7 +37,7 @@ svg {
 }
 
 svg:hover {
-    color: green;
+    color: #7289d9;
 }
 
 #buttons {
@@ -57,3 +57,6 @@ button:hover{
     background-color: var(--hover-color);
 }
 
+#SettingsText {
+    text-decoration: underline;
+}
