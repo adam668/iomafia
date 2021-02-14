@@ -32,6 +32,15 @@ section {
     bottom: 5px;
 }
 
+#NameStart {
+    text-decoration: solid;
+    position: inherit;
+    left: 55%;
+    bottom: 85%;
+    font-size: 1.5vw;
+    color:rgba(129, 236, 29, 0.671)
+}
+
 button {
     border: none;
     border-radius: 10px;

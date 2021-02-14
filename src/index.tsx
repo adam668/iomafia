@@ -1,12 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import Startpage from './Startpage/Startpage';
 
-ReactDOM.render(
+ReactDOM.render((
   <React.StrictMode>
+    <BrowserRouter>
     <Startpage />
-  </React.StrictMode>,
+    </BrowserRouter>
+  </React.StrictMode>),
   document.getElementById('root')
 );
 
